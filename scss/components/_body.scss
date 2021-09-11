@@ -1,0 +1,43 @@
+// RESPONSIVE DESIGN - Mobile First 
+body {
+	// height: 100vh;
+	background-color: $primary-color-red;
+	background-image: $bg-intro-mobile;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 6.125rem 1.5rem 4.25rem;
+}
+
+// RESPONSIVE DESIGN - Phablets and Tablets 
+// 768x540
+@media only screen and (min-width: 768px){
+	body {
+		height: 100vh;
+		background-image: $bg-intro-desktop;
+		flex-direction: row;
+		padding: 2rem;
+		justify-content: center;
+	}
+}
+
+// 960x540
+@media only screen and (min-width: 960px){
+	body {
+		padding: 3rem;
+	}
+}
+
+// RESPONSIVE DESIGN - Pc and Laptops
+// 1024x640 and 1366x768 It's the same code
+
+// 1440x800
+@media only screen and (min-width: 1440px){
+	body {
+		padding: 7.5625rem 10.3125rem;
+	}
+}
+

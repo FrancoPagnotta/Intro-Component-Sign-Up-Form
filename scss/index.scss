@@ -1,0 +1,41 @@
+// GENERAL
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+// VARIABLES
+// colors
+$primary-color-red: hsl(0, 100%, 74%);
+$primary-color-green: hsl(154, 59%, 51%);
+
+$accent-color-blue: hsl(248, 32%, 49%);
+
+$neutral-color-dark-blue: hsl(249, 10%, 26%);
+$neutral-color-grayish-blue: hsl(246, 25%, 77%);
+
+// typography
+$font-family: 'Poppins', sans-serif;
+$font-size: 1rem;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// images
+$bg-intro-desktop: url('/images/bg-intro-desktop.png');
+$bg-intro-mobile: url('/images/bg-intro-mobile.png');
+
+
+// IMPORTS
+@import "components/body"; 
+@import "components/description"; 
+@import "components/promotion"; 
+@import "components/form"; 
+
+
+
