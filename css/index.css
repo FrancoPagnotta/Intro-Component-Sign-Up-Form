@@ -3,26 +3,41 @@
 *::before {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif; }
 
 body {
   background-color: #ff7a7a;
-  background-image: url("/images/bg-intro-mobile.png");
+  background-image: url("images/bg-intro-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 6.125rem 1.5rem 4.25rem; }
 
 @media only screen and (min-width: 768px) {
   body {
     height: 100vh;
-    background-image: url("/images/bg-intro-desktop.png");
+    background-image: url("images/bg-intro-desktop.png");
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     padding: 2rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; } }
 
 @media only screen and (min-width: 960px) {
@@ -39,60 +54,78 @@ body {
   height: 13.125rem;
   padding: .3125rem;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
-  .component-description .description-title {
-    margin-bottom: 1.8125rem;
-    font-size: 1.6875rem;
-    width: 14.4375rem;
-    height: 4.0625rem; }
-    .component-description .description-title h1 {
-      font-size: 1.6875rem; }
-  .component-description .description-paragraph {
-    width: 19.375rem;
-    height: 7.25rem; }
+
+.component-description .description-title {
+  margin-bottom: 1.8125rem;
+  font-size: 1.6875rem;
+  width: 14.4375rem;
+  height: 4.0625rem; }
+
+.component-description .description-title h1 {
+  font-size: 1.6875rem; }
+
+.component-description .description-paragraph {
+  width: 19.375rem;
+  height: 7.25rem; }
 
 @media only screen and (min-width: 768px) {
   .component-description {
     width: 100%;
     height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; }
-    .component-description .description-title {
-      margin-bottom: 1.8125rem;
-      width: 100%;
-      text-align: left;
-      line-height: 2.5rem; }
-      .component-description .description-title h1 {
-        font-size: 2.125rem; }
-    .component-description .description-paragraph {
-      width: 100%;
-      height: 7.25rem;
-      text-align: left; }
-      .component-description .description-paragraph p {
-        font-size: .6875rem; } }
+  .component-description .description-title {
+    margin-bottom: 1.8125rem;
+    width: 100%;
+    text-align: left;
+    line-height: 2.5rem; }
+  .component-description .description-title h1 {
+    font-size: 2.125rem; }
+  .component-description .description-paragraph {
+    width: 100%;
+    height: 7.25rem;
+    text-align: left; }
+  .component-description .description-paragraph p {
+    font-size: .6875rem; } }
 
 @media only screen and (min-width: 960px) {
   .component-description {
     width: 100%;
     height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; }
-    .component-description .description-title {
-      margin-bottom: 1.8125rem;
-      width: 100%;
-      text-align: left;
-      line-height: 2.5rem; }
-      .component-description .description-title h1 {
-        font-size: 2.5rem; }
-    .component-description .description-paragraph {
-      width: 100%;
-      height: 7.25rem;
-      text-align: left;
-      font-size: .8125rem; }
-      .component-description .description-paragraph p {
-        font-size: .8125rem; } }
+  .component-description .description-title {
+    margin-bottom: 1.8125rem;
+    width: 100%;
+    text-align: left;
+    line-height: 2.5rem; }
+  .component-description .description-title h1 {
+    font-size: 2.5rem; }
+  .component-description .description-paragraph {
+    width: 100%;
+    height: 7.25rem;
+    text-align: left;
+    font-size: .8125rem; }
+  .component-description .description-paragraph p {
+    font-size: .8125rem; } }
 
 @media only screen and (min-width: 1366px) {
   .component-description {
@@ -100,16 +133,20 @@ body {
     height: 12.875rem;
     padding: 0;
     margin-right: 2.375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start; }
-    .component-description .description-title {
-      margin-bottom: 1.8125rem;
-      font-size: 2.5rem;
-      width: 25.75rem;
-      height: 6.625rem;
-      line-height: calc(100% + 18px); }
-    .component-description .description-paragraph {
-      font-size: 1rem; } }
+  .component-description .description-title {
+    margin-bottom: 1.8125rem;
+    font-size: 2.5rem;
+    width: 25.75rem;
+    height: 6.625rem;
+    line-height: calc(100% + 18px); }
+  .component-description .description-paragraph {
+    font-size: 1rem; } }
 
 @media only screen and (min-width: 1440px) {
   .component-description {
@@ -117,140 +154,182 @@ body {
     height: 12.875rem;
     padding: 0;
     margin-right: 2.375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start; }
-    .component-description .description-title {
-      margin-bottom: 1.8125rem;
-      font-size: 2.5rem;
-      width: 25.75rem;
-      height: 6.625rem;
-      line-height: calc(100% + 18px); }
-    .component-description .description-paragraph {
-      font-size: 1rem; } }
+  .component-description .description-title {
+    margin-bottom: 1.8125rem;
+    font-size: 2.5rem;
+    width: 25.75rem;
+    height: 6.625rem;
+    line-height: calc(100% + 18px); }
+  .component-description .description-paragraph {
+    font-size: 1rem; } }
 
 .form-promotion {
   width: 20.4375rem;
   height: 5.5rem;
   margin-top: 4.375rem;
   margin-bottom: 1.4375rem; }
-  .form-promotion .promotion-btn {
-    font-size: 1rem;
-    border: none;
-    outline: none;
-    width: 20.4375rem;
-    height: 5.5rem;
-    border-radius: .625rem;
-    background-color: #6055a5;
-    color: #Ffff;
-    line-height: 1.6875rem;
-    padding: 0 2.6875rem;
-    box-shadow: 0px 8px 1px 0px rgba(62, 60, 73, 0.25); }
-    .form-promotion .promotion-btn strong {
-      font-weight: 700; }
+
+.form-promotion .promotion-btn {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  width: 20.4375rem;
+  height: 5.5rem;
+  border-radius: .625rem;
+  background-color: #6055a5;
+  color: #Ffff;
+  line-height: 1.6875rem;
+  padding: 0 2.6875rem;
+  -webkit-box-shadow: 0px 8px 1px 0px rgba(62, 60, 73, 0.25);
+  box-shadow: 0px 8px 1px 0px rgba(62, 60, 73, 0.25); }
+
+.form-promotion .promotion-btn strong {
+  font-weight: 700; }
 
 @media only screen and (min-width: 768px) {
   .component-form {
     width: 100%; }
-    .component-form .form-promotion {
-      width: 100%;
-      height: 100%;
-      margin-top: 0;
-      margin-bottom: 1.5rem; }
-      .component-form .form-promotion .promotion-btn {
-        width: 100%;
-        height: 3rem;
-        font-size: 11px; } }
+  .component-form .form-promotion {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 1.5rem; }
+  .component-form .form-promotion .promotion-btn {
+    width: 100%;
+    height: 3rem;
+    font-size: 11px; } }
 
 @media only screen and (min-width: 1366px) {
   .component-form .form-promotion {
     height: auto;
     margin-bottom: 1.5rem; }
-    .component-form .form-promotion .promotion-btn {
-      height: 3.75rem;
-      font-size: 1rem; } }
+  .component-form .form-promotion .promotion-btn {
+    height: 3.75rem;
+    font-size: 1rem; } }
 
 @media only screen and (min-width: 1440px) {
   .component-form .form-promotion {
     height: auto;
     margin-bottom: 1.5rem; }
-    .component-form .form-promotion .promotion-btn {
-      height: 3.75rem;
-      font-size: 1rem; } }
+  .component-form .form-promotion .promotion-btn {
+    height: 3.75rem;
+    font-size: 1rem; } }
 
 .form {
   width: 20.4375rem;
   height: 27.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: #FFFF;
   border-radius: .625rem;
   padding: 1.5rem;
+  -webkit-box-shadow: 0px 8px 1px 0px rgba(62, 60, 73, 0.25);
   box-shadow: 0px 8px 1px 0px rgba(62, 60, 73, 0.25); }
-  .form .form-input {
-    margin-bottom: 1rem;
-    height: 3.375rem;
-    width: 17.3125rem;
-    border: 1px solid #E2E2E2;
-    border-radius: .3125rem;
-    padding: 1.375rem 1.1875rem;
-    font-size: 1rem;
-    font-weight: 600;
-    outline: none;
-    color: #3e3c49; }
-  .form .form-input::placeholder {
-    color: #87868B; }
-  .form .form-input:focus {
-    border: 1px solid #3e3c49; }
-  .form .form-btn {
-    height: 3.375rem;
-    width: 17.3125rem;
-    margin-bottom: 1rem;
-    border-radius: .3125rem;
-    border: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
-    background-color: #38cc8c;
-    color: #fff;
-    box-shadow: 0px 4px 1px 0px #45af83;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: .1s ease-in-out; }
-  .form .form-btn:hover {
-    background-color: #78E2B5;
-    box-shadow: 0px 4px 1px 0px #6CCBA1; }
-  .form .form-btn:active {
-    transform: scale(0.98); }
-  .form .form-span {
-    text-align: center;
-    font-size: 12px;
-    color: #b9b6d3;
-    letter-spacing: .5px; }
-    .form .form-span strong {
-      color: #ff7a7a;
-      font-weight: 700; }
+
+.form .form-input {
+  margin-bottom: 1rem;
+  height: 3.375rem;
+  width: 17.3125rem;
+  border: 1px solid #E2E2E2;
+  border-radius: .3125rem;
+  padding: 1.375rem 1.1875rem;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  color: #3e3c49; }
+
+.form .form-input::-webkit-input-placeholder {
+  color: #87868B; }
+
+.form .form-input:-ms-input-placeholder {
+  color: #87868B; }
+
+.form .form-input::-ms-input-placeholder {
+  color: #87868B; }
+
+.form .form-input::placeholder {
+  color: #87868B; }
+
+.form .form-input:focus {
+  border: 1px solid #3e3c49; }
+
+.form .form-btn {
+  height: 3.375rem;
+  width: 17.3125rem;
+  margin-bottom: 1rem;
+  border-radius: .3125rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: #38cc8c;
+  color: #fff;
+  -webkit-box-shadow: 0px 4px 1px 0px #45af83;
+  box-shadow: 0px 4px 1px 0px #45af83;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out; }
+
+.form .form-btn:hover {
+  background-color: #78E2B5;
+  -webkit-box-shadow: 0px 4px 1px 0px #6CCBA1;
+  box-shadow: 0px 4px 1px 0px #6CCBA1; }
+
+.form .form-btn:active {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98); }
+
+.form .form-span {
+  text-align: center;
+  font-size: 12px;
+  color: #b9b6d3;
+  letter-spacing: .5px; }
+
+.form .form-span strong {
+  color: #ff7a7a;
+  font-weight: 700; }
 
 @media only screen and (min-width: 768px) {
   .form {
     width: 100%;
     height: 100%;
     padding: 1.5rem 1rem; }
-    .form .form-input {
-      width: 100%;
-      height: 3rem;
-      padding: .3125rem .625rem;
-      font-size: 12px; }
-    .form .form-btn {
-      width: 100%;
-      height: 3rem;
-      font-size: 12px;
-      font-weight: 600; }
-    .form .form-span {
-      font-size: 7px; } }
+  .form .form-input {
+    width: 100%;
+    height: 3rem;
+    padding: .3125rem .625rem;
+    font-size: 12px; }
+  .form .form-btn {
+    width: 100%;
+    height: 3rem;
+    font-size: 12px;
+    font-weight: 600; }
+  .form .form-span {
+    font-size: 7px; } }
 
 @media only screen and (min-width: 960px) {
   .form .form-span {
@@ -261,39 +340,41 @@ body {
     width: 33.75rem;
     height: 34.875rem;
     margin-left: 2.375rem; }
-    .component-form .form {
-      padding: 2.5rem;
-      height: auto; }
-      .component-form .form .form-input {
-        width: 28.75rem;
-        height: 3.5rem;
-        margin-bottom: 1.25rem;
-        font-size: 1rem; }
-      .component-form .form .form-btn {
-        width: 28.75rem;
-        height: 3.5rem;
-        margin-bottom: 1.25rem;
-        font-size: 1rem; }
-      .component-form .form .form-span {
-        font-size: 10px; } }
+  .component-form .form {
+    padding: 2.5rem;
+    height: auto; }
+  .component-form .form .form-input {
+    width: 28.75rem;
+    height: 3.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem; }
+  .component-form .form .form-btn {
+    width: 28.75rem;
+    height: 3.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem; }
+  .component-form .form .form-span {
+    font-size: 10px; } }
 
 @media only screen and (min-width: 1440px) {
   .component-form {
     width: 33.75rem;
     height: 34.875rem;
     margin-left: 2.375rem; }
-    .component-form .form {
-      padding: 2.5rem;
-      height: auto; }
-      .component-form .form .form-input {
-        width: 28.75rem;
-        height: 3.5rem;
-        margin-bottom: 1.25rem;
-        font-size: 1rem; }
-      .component-form .form .form-btn {
-        width: 28.75rem;
-        height: 3.5rem;
-        margin-bottom: 1.25rem;
-        font-size: 1rem; }
-      .component-form .form .form-span {
-        font-size: 10px; } }
+  .component-form .form {
+    padding: 2.5rem;
+    height: auto; }
+  .component-form .form .form-input {
+    width: 28.75rem;
+    height: 3.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem; }
+  .component-form .form .form-btn {
+    width: 28.75rem;
+    height: 3.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem; }
+  .component-form .form .form-span {
+    font-size: 10px; } }
+
+/*# sourceMappingURL=index.css.map */
