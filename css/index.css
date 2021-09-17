@@ -19,7 +19,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   body {
-    height: 100vh;
+    height: auto;
     background-image: url("../images/bg-intro-desktop.png");
     flex-direction: row;
     padding: 2rem;
@@ -179,7 +179,7 @@ body {
 
 .form {
   width: 20.4375rem;
-  height: 27.625rem;
+  max-height: 36.875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -260,12 +260,14 @@ body {
     transform: scale(0.98); }
   .form .form-span {
     text-align: center;
-    font-size: 12px;
+    font-size: 7px;
     color: #b9b6d3;
     letter-spacing: .5px; }
-    .form .form-span strong {
+    .form .form-span a {
       color: #ff7a7a;
-      font-weight: 700; }
+      font-weight: 700;
+      outline: none;
+      text-decoration: none; }
 
 @media only screen and (min-width: 768px) {
   .form {
@@ -283,11 +285,11 @@ body {
       font-size: 12px;
       font-weight: 600; }
     .form .form-span {
-      font-size: 7px; } }
+      font-size: 8px; } }
 
 @media only screen and (min-width: 960px) {
   .form .form-span {
-    font-size: 9px; } }
+    font-size: 10px; } }
 
 @media only screen and (min-width: 1366px) {
   .component-form {
@@ -308,7 +310,7 @@ body {
         margin-bottom: 1.25rem;
         font-size: 1rem; }
       .component-form .form .form-span {
-        font-size: 10px; } }
+        font-size: 12px; } }
 
 @media only screen and (min-width: 1440px) {
   .component-form {
@@ -327,6 +329,4 @@ body {
         width: 28.75rem;
         height: 3.5rem;
         margin-bottom: 1.25rem;
-        font-size: 1rem; }
-      .component-form .form .form-span {
-        font-size: 10px; } }
+        font-size: 1rem; } }

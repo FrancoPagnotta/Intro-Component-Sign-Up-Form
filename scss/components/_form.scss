@@ -1,7 +1,7 @@
 // RESPONSIVE DESIGN - Mobile First 
 .form {
 	width: 20.4375rem;
-	min-height: 27.625rem;
+	max-height: 36.875rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -109,13 +109,15 @@
 
 	.form-span {
 		text-align: center;
-		font-size: 12px;
+		font-size: 7px;
 		color: $neutral-color-grayish-blue;
 		letter-spacing: .5px;
 
-		strong {
+		a {
 			color: $primary-color-red;
 			font-weight: $font-weight-bold;
+			outline: none;
+			text-decoration: none;
 		}
 	}
 
@@ -145,7 +147,7 @@
 		}
 
 		.form-span {
-			font-size: 7px;
+			font-size: 8px;
 		}
 	}
 	
@@ -155,7 +157,7 @@
 @media only screen and (min-width: 960px) {
 	.form {
 		.form-span {
-			font-size: 9px;
+			font-size: 10px;
 		}
 	}
 }
@@ -189,7 +191,7 @@
 			}
 
 			.form-span {
-				font-size: 10px;
+				font-size: 12px;
 			}
 		}
 	}
@@ -218,10 +220,6 @@
 				height: 3.5rem;
 				margin-bottom: 1.25rem;
 				font-size: $font-size;
-			}
-
-			.form-span {
-				font-size: 10px;
 			}
 		}
 	}
