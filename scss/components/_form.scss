@@ -1,7 +1,7 @@
 // RESPONSIVE DESIGN - Mobile First 
 .form {
 	width: 20.4375rem;
-	height: 27.625rem;
+	min-height: 27.625rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -30,11 +30,56 @@
 	.form-input:focus {
 		border: 1px solid $neutral-color-dark-blue;
 	}
+
+	.form-input.error {
+		content: '';
+		background-image: url('/images/icon-error.svg');
+		color: #CF8E8D;
+		background-repeat: no-repeat;	
+		background-position-y: center;	
+		background-position-x: calc(100% - 25px); 
+		animation: error 1s 1 normal 0s ease-out both;
+		border: 2px solid #CF8E8D;
+	}
+
 	
+	.error-message {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		font-size: .75rem;
+		color: #CF8E8D;
+		font-weight: 600;
+		font-style: italic;
+		transform: translateY(-0.75rem);
+		margin-bottom: 1.4375rem;
+		animation: error 1s 1 normal 0s ease-out both;
+	}
+	
+	.error-message.none {
+		display: none;
+	}
+	
+	.error-message.is-active {
+		display: flex;
+	}
+	
+	@keyframes error {
+		0% {
+			overflow: hidden;
+			opacity: 0;
+		}
+
+		100% {
+			overflow: visible;
+			opacity: 1;
+		}
+	}
+
 	.form-btn {
 		height: 3.375rem;
 		width: 17.3125rem;
-		// padding: 1.375rem 1.1875rem;
 		margin-bottom: 1rem;
 		border-radius: .3125rem;
 		border: none;
@@ -73,7 +118,9 @@
 			font-weight: $font-weight-bold;
 		}
 	}
+
 }
+
 
 // RESPONSIVE DESIGN - Phablets and Tablets
 // 768x540

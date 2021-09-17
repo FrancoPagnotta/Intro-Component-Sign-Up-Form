@@ -33,10 +33,10 @@
       </button>
     </section>
     <form action="" class="form">
-      <input type="text" class="form-input" id="first-name" placeholder="First Name" required>
-      <input type="text" class="form-input" id="last-name" placeholder="Last Name" required>
-      <input type="email" class="form-input" id="email" placeholder="Email Address" required>
-      <input type="password" class="form-input" id="password" placeholder="Password" required>
+      <input type="text" class="form-input" id="input-name" name="first-name" placeholder="First Name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="First name cannot be empty" required>
+      <input type="text" class="form-input" id="input-lastName" name="last-name" placeholder="Last Name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Last name cannot be empty" required>
+      <input type="email" class="form-input" id="input-email" name="email" placeholder="Email Address" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}$" title="Looks like this is not an email" required>
+      <input type="password" class="form-input" id="input-password" name="password" placeholder="Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}" title="Password cannot be empty" required>
   
       <button class="form-btn">
         Claim your free trial
@@ -54,6 +54,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>  
-  <script src="index.js"></script>
+  <script src="index.js" type="module"></script>
 </body>
 </html>

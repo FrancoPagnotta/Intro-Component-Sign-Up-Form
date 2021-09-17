@@ -113,7 +113,10 @@
 		}
 	
 		.description-paragraph {
-			font-size: $font-size;
+			
+			p {
+				font-size: $font-size;
+			}
 		}
 	}
 }

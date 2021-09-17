@@ -108,7 +108,7 @@ body {
       width: 25.75rem;
       height: 6.625rem;
       line-height: calc(100% + 18px); }
-    .component-description .description-paragraph {
+    .component-description .description-paragraph p {
       font-size: 1rem; } }
 
 @media only screen and (min-width: 1440px) {
@@ -202,6 +202,39 @@ body {
     color: #87868B; }
   .form .form-input:focus {
     border: 1px solid #3e3c49; }
+  .form .form-input.error {
+    content: '';
+    background-image: url("/images/icon-error.svg");
+    color: #CF8E8D;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: calc(100% - 25px);
+    animation: error 1s 1 normal 0s ease-out both;
+    border: 2px solid #CF8E8D; }
+  .form .error-message {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: .75rem;
+    color: #CF8E8D;
+    font-weight: 600;
+    font-style: italic;
+    transform: translateY(-0.75rem);
+    margin-bottom: 1.4375rem;
+    animation: error 1s 1 normal 0s ease-out both; }
+  .form .error-message.none {
+    display: none; }
+  .form .error-message.is-active {
+    display: flex; }
+
+@keyframes error {
+  0% {
+    overflow: hidden;
+    opacity: 0; }
+  100% {
+    overflow: visible;
+    opacity: 1; } }
   .form .form-btn {
     height: 3.375rem;
     width: 17.3125rem;
