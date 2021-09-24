@@ -16,7 +16,7 @@
 		width: 17.3125rem;
 		border: 1px solid #E2E2E2;
 		border-radius: .3125rem;
-		padding: 1.375rem 1.1875rem;
+		padding: 1.9375rem 1.4375rem;
 		font-size: $font-size;
 		font-weight: $font-weight-semi-bold;
 		outline: none;
@@ -24,7 +24,7 @@
 	}
 
 	.form-input::placeholder {
-		color: #87868B;
+		color: #6C6B70;
 	}
 
 	.form-input:focus {
@@ -187,11 +187,7 @@
 				width: 28.75rem;
 				height: 3.5rem;
 				margin-bottom: 1.25rem;
-				font-size: $font-size;
-			}
-
-			.form-span {
-				font-size: 12px;
+				font-size: 1.125rem;
 			}
 		}
 	}
@@ -219,7 +215,6 @@
 				width: 28.75rem;
 				height: 3.5rem;
 				margin-bottom: 1.25rem;
-				font-size: $font-size;
 			}
 		}
 	}
