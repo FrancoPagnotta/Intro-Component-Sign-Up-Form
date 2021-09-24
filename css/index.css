@@ -122,9 +122,11 @@ body {
     .component-description .description-title {
       margin-bottom: 1.8125rem;
       font-size: 2.5rem;
-      width: 25.75rem;
+      width: inherit;
       height: 6.625rem;
       line-height: calc(100% + 18px); }
+      .component-description .description-title h1 {
+        font-size: 3rem; }
     .component-description .description-paragraph {
       font-size: 1rem; } }
 
